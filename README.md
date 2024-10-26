@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  ![License: MIT](https://img.shields.io/badge/License-MIT.svg)
 
-Currently, two official plugins are available:
+  ## Description
+  Personal portfolio website built using React that highlights my skills and competencies for future employers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
-## Expanding the ESLint configuration
+  ## Installation
+  Running npm i should get all the dependencies necessary.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  ## Usage
+  When viewed from the browser the user can click through different tabs to learn about me, contact me, and decide if I would be a good fit for their company.
 
-- Configure the top-level `parserOptions` property like this:
+  ## License
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+![License: MIT](https://img.shields.io/badge/License-MIT.svg)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Link: (https://img.shields.io/badge/License-MIT.svg)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+  ## Contributing
+  Contributions not applicable, but please feel free to reach out through the contact page.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  ## Tests
+  No specific instructions as far as official testing goes.
+
+  ## Questions
+  If you have any questions, feel free to reach out to ashlinlee98 via [GitHub](https://github.com/ashlinlee98) or email at ashlinlee98@gmail.com.
+  
