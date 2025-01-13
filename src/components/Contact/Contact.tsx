@@ -37,26 +37,11 @@ const MyForm = () => {
         }
     };
 
-    const handleSubmit = () => {
-        if (formData.name && formData.email && formData.message) {
-            setSubmittedMessage('Thank you for your message! I will get back to you soon.');
-            setFormData({ name: '', email: '', message: '' });
-        } else {
-            setErrors({
-                name: !formData.name ? 'Name is required' : '',
-                email: !formData.email ? 'Email is required' : '',
-                message: !formData.message ? 'Message is required' : '',
-            });
-
-            setSubmittedMessage('');
-        }
-    }
-
     return (
         <div className='bg-blue-300 '>
             <h2 className="ml-20 text-slate-700 lg:text-5xl text-3xl font-bold px-7 md:px-16 py-10">Contact Me</h2>
             <div className='flex justify-center'>
-                <form onSubmit={handleSubmit} className="space-y-4 w-3/4 mb-6" data-netlify="true">
+                <form className="space-y-4 w-3/4 mb-6" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     {/* Name Input */}
                     <div>
