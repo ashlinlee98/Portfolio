@@ -38,8 +38,6 @@ const MyForm = () => {
     };
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-
         if (formData.name && formData.email && formData.message) {
             setSubmittedMessage('Thank you for your message! I will get back to you soon.');
             setFormData({ name: '', email: '', message: '' });
