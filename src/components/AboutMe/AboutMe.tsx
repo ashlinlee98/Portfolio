@@ -5,7 +5,7 @@ const About = () => {
             
             <div className="lg:flex justify-between items-center lg:px-12 lg:pb-10">
                 
-                <img src="./../../../images/Headshot.jpg" alt="professional headshot" className="w-96 rounded-lg lg:border-solid lg:border-8 lg:border-yellow-500 lg:ml-4" />
+                <img src="./../../../images/headshot.jpg" alt="professional headshot" className="w-96 rounded-lg lg:border-solid lg:border-8 lg:border-yellow-500 lg:ml-4" />
                 
                 <div className="bg-indigo-300 text-center text-black text-lg lg:text-2xl px-9 py-5 lg:border-solid lg:border-8 lg:border-yellow-500 rounded-lg lg:ml-20 lg:mr-10 lg:mb-20">
                     <p>
