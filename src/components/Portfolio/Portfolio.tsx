@@ -16,29 +16,29 @@ const Portfolio = () => {
             githubLink: "https://github.com/AlecTaber/rancid-rhythms?tab=readme-ov-file"
         },
         {
-            title: "TBD",
-            image: "https://via.placeholder.com/150",
-            liveLink: "https://www.google.com",
-            githubLink: "https://www.github.com"
+            title: "LoopLab",
+            image: "/images/looplab.png",
+            liveLink: "https://looplab.onrender.com/",
+            githubLink: "https://github.com/AlecTaber/LoopLab?tab=readme-ov-file"
         },
-        {
-            title: "TBD",
-            image: "https://via.placeholder.com/150",
-            liveLink: "https://www.google.com",
-            githubLink: "https://www.github.com"
-        },
-        {
-            title: "TBD",
-            image: "https://via.placeholder.com/150",
-            liveLink: "https://www.google.com",
-            githubLink: "https://www.github.com"
-        },
-        {
-            title: "TBD",
-            image: "https://via.placeholder.com/150",
-            liveLink: "https://www.google.com",
-            githubLink: "https://www.github.com"
-        }
+        // {
+        //     title: "TBD",
+        //     image: "https://via.placeholder.com/150",
+        //     liveLink: "https://www.google.com",
+        //     githubLink: "https://www.github.com"
+        // },
+        // {
+        //     title: "TBD",
+        //     image: "https://via.placeholder.com/150",
+        //     liveLink: "https://www.google.com",
+        //     githubLink: "https://www.github.com"
+        // },
+        // {
+        //     title: "TBD",
+        //     image: "https://via.placeholder.com/150",
+        //     liveLink: "https://www.google.com",
+        //     githubLink: "https://www.github.com"
+        // }
     ]
     return (
         <section className="portfolio bg-blue-300">
