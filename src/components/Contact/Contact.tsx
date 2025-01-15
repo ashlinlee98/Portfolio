@@ -40,6 +40,7 @@ const MyForm = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault(); // Prevent the default form submission
         setSubmittedMessage("Thanks for reaching out! I'll get back to you soon.");
+        setFormData({ name: '', email: '', message: '' });
     };
 
     return (
