@@ -2,8 +2,20 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx,css}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Montserrat', 'sans-serif'],
+      },
+      dropShadow: {
+        cyanGlow: '0 0 7px rgba(0, 255, 255, 0.9)', // Custom cyan glow
+      },
+      textShadow: {
+        cyanGlow: '0 0 6px cyan, 0 0 10px rgba(0, 255, 255, 0.7)',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }
 
