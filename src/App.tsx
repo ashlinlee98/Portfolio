@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
-    <div className='w-screen'>
+    <div>
       <Router>
         <Header />
         <Routes>
