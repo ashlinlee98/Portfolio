@@ -7,18 +7,19 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
 import Resume from './components/Resume/Resume'
 import Footer from './components/Footer/Footer'
+//import Project from './components/Portfolio/Project/Project';
 
 const App = () => {
   return (
     <div>
       <Router>
         <Header />
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
-        </Routes>
+        <main className="bg-gradient-to-b from-gray-900 to-blue-950 bg-gray-900 drop-shadow-cyanGlow p-6 font-sans font-bold font-weight-600">
+            <About />
+            <Portfolio />
+            <Resume />
+            <Contact />
+        </main>
         <Footer />
       </Router>
     </div>
