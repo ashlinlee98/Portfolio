@@ -45,7 +45,7 @@ const MyForm = () => {
 
     return (
         <div id="contact">
-            <h2 className="ml-20 text-slate-700 lg:text-5xl text-3xl font-bold px-7 md:px-16 py-10">Contact Me</h2>
+            <h2 className="mb-16 ml-20 text-slate-700 lg:text-5xl text-3xl font-bold px-7 md:px-16 py-10">Contact Me</h2>
             <div className='flex justify-center'>
                 <form className="space-y-4 w-3/4 mb-6" data-netlify="true" name="contact" method="POST" onSubmit={handleSubmit}>
                     <input type="hidden" name="form-name" value="contact" />
