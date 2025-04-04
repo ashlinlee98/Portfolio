@@ -7,7 +7,6 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
 import Resume from './components/Resume/Resume'
 import Footer from './components/Footer/Footer'
-//import Project from './components/Portfolio/Project/Project';
 
 const App = () => {
   return (
