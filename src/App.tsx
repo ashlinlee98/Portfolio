@@ -14,7 +14,7 @@ const App = () => {
     <div>
       <Router>
         <Header />
-        <main className="bg-gradient-to-b from-gray-900 to-blue-950 bg-gray-900 drop-shadow-cyanGlow p-6 font-sans font-bold font-weight-600">
+        <main className="bg-gradient-to-b from-gray-900 to-blue-950 p-6 font-sans font-bold font-weight-600">
             <About />
             <Portfolio />
             <Resume />

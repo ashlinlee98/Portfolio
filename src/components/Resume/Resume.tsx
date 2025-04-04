@@ -1,6 +1,7 @@
 const Resume = () => {
     return (
-        <div id="resume">
+        <section id="resume">
+            <div>
         <h2 className="ml-16 text-slate-700 md:text-5xl text-3xl font-bold md:px-16 py-10">Resume and Skills</h2>
         <a href="/Documents/ashlin_lee_resume.docx.pdf" download className="text-blue-500 md:text-2xl text-lg underline ml-20">
             Download my resume
@@ -25,6 +26,7 @@ const Resume = () => {
             <li>Authentication</li>
         </ul>
     </div>
+        </section>
     );
 }
 

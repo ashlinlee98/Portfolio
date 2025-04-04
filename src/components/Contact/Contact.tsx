@@ -44,7 +44,8 @@ const MyForm = () => {
     };
 
     return (
-        <div id="contact">
+        <section id="contact">
+            <div>
             <h2 className="mb-16 ml-20 text-slate-700 lg:text-5xl text-3xl font-bold px-7 md:px-16 py-10">Contact Me</h2>
             <div className='flex justify-center'>
                 <form className="space-y-4 w-3/4 mb-6" data-netlify="true" name="contact" method="POST" onSubmit={handleSubmit}>
@@ -109,6 +110,7 @@ const MyForm = () => {
             </div>
             {submittedMessage && <p className="text-black text-center text-xl font-bold p-4">{submittedMessage}</p>}
         </div>
+        </section>
     );
 }
 
