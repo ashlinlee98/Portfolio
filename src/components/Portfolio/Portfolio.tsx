@@ -42,7 +42,7 @@ const Portfolio = () => {
     ]
     return (
         <section id="portfolio">
-            <h2 className="ml-20 text-slate-700 lg:text-5xl text-3xl font-bold px-8 md:px-16 py-10">My Projects</h2>
+            <h2 className="lg:text-7xl text-3xl p-16 mb-4 mt-16 text-gray-900 text-shadow-cyanGlow">My Projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 p-4 justify-items-center">
         {projects.map((project, index) => (
           <Project
