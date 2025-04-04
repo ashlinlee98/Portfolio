@@ -1,24 +1,56 @@
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from 'react';
 
 const Navigation = () => {
+    const [currentSection, setCurrentSection] = useState<string>('about');
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll('section');
+            let newSection = 'about'; // Default section
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                    newSection = section.getAttribute("id") || 'about';
+                }
+            });
+
+            setCurrentSection(newSection); // Update state once, after looping
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+
     return (
         <nav>
             <ul className="flex flex-col sm:flex-row justify-start md:space-x-9 p-4 lg:text-4xl text-2xl">
                 <li>
-                    <NavLink to="/" className={({ isActive }) => 
-                            isActive ? 'underline decoration-yellow-500 text-slate-700' : 'text-slate-700 hover:text-indigo-400'}>About</NavLink>
+                    <a href="#about"
+                        className={`nav-link hover:text-cyan-500 ${currentSection === 'about' ? 'text-gray-900 text-shadow-cyanGlow' : 'text-slate-600'}`}
+                    >About
+                    </a>
                 </li>
                 <li>
-                    <NavLink to="/portfolio" className={({ isActive }) => 
-                            isActive ? 'underline decoration-yellow-500 text-slate-700' : 'text-slate-700 hover:text-indigo-400'}>Projects</NavLink>
+                    <a href="#portfolio"
+                        className={`nav-link hover:text-cyan-500 ${currentSection === 'portfolio' ? 'text-gray-900 text-shadow-cyanGlow' : 'text-slate-600'}`}
+                    >Projects
+                    </a>
                 </li>
                 <li>
-                    <NavLink to="/contact" className={({ isActive }) => 
-                            isActive ? 'underline decoration-yellow-500 text-slate-700' : 'text-slate-700 hover:text-indigo-400'}>Contact</NavLink>
+                    <a href="#resume"
+                        className={`nav-link hover:text-cyan-500 ${currentSection === 'resume' ? 'text-gray-900 text-shadow-cyanGlow' : 'text-slate-600'}`}
+                    >Resume
+                    </a>
                 </li>
                 <li>
-                    <NavLink to="/resume" className={({ isActive }) => 
-                            isActive ? 'underline decoration-yellow-500 text-slate-700' : 'text-slate-700 hover:text-indigo-400'}>Resume</NavLink>
+                    <a href="#contact"
+                        className={`nav-link hover:text-cyan-500 ${currentSection === 'contact' ? 'text-gray-900 text-shadow-cyanGlow' : 'text-slate-600'}`}
+                    >Contact
+                    </a>
                 </li>
             </ul>
         </nav>
